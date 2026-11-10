@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siva Prasanna | Java Full Stack Developer</title>
+  
+  <meta name="description" content="Portfolio of Siva Prasanna - Java Full Stack Developer specializing in Spring Boot, REST APIs, Microservices, MySQL, and modern HTML/CSS/JavaScript web applications.">
+  <meta name="keywords" content="Siva Prasanna, Java Developer, Full Stack Developer, Spring Boot, MySQL, REST API, GUVI, Java FSD, HTML, CSS, JavaScript">
+  <meta name="author" content="Siva Prasanna">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Siva Prasanna | Java Full Stack Developer">
+  <meta property="og:description" content="Explore Java Full Stack projects, Spring Boot architectures, and REST APIs built by Siva Prasanna.">
+  <meta property="og:url" content="https://github.com/SIVAPRASANNA2812">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Glow Orbs -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- ========================================================================
+       NAVBAR
+       ======================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">SP</span>
+        <span class="brand-text">Siva<span class="gradient-text">.Prasanna</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" style="display: none; @media(min-width: 640px){display: inline-flex;}">Hire Me</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Full Stack Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text">Siva Prasanna</span>
+          </h1>
+
+          <div class="hero-role">Java Full Stack Developer</div>
+
+          <p class="hero-description">
+            Passionate software engineer focused on building robust, scalable enterprise backends with 
+            <strong>Java & Spring Boot</strong>, architecting <strong>RESTful APIs & Microservices</strong>, 
+            and delivering clean, intuitive web frontends with <strong>HTML5, CSS3, and JavaScript</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+            <a href="assets/resume/Siva_Prasanna_Resume.pdf" download="Siva_Prasanna_Resume.pdf" class="btn btn-secondary" title="Download Resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="social-icon-link" title="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sivaprasanna2812" target="_blank" rel="noopener noreferrer" class="social-icon-link" title="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:sivaprasanna28@gmail.com" class="social-icon-link" title="Send Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <button onclick="copyEmail()" class="social-icon-link" title="Copy Email Address" style="cursor: pointer;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Terminal Visual Card -->
+        <div class="hero-visual">
+          <div class="floating-chip chip-spring">
+            <span>🌱</span> Spring Boot 3
+          </div>
+          <div class="floating-chip chip-java">
+            <span>☕</span> Java 17+
+          </div>
+
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">DeveloperProfile.java</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="code-keyword">@RestController</span></p>
+              <p><span class="code-keyword">@RequestMapping</span>(<span class="code-string">"/api/developer"</span>)</p>
+              <p><span class="code-keyword">public class</span> <span class="code-class">DeveloperController</span> {</p>
+              <p style="padding-left: 1.25rem;">
+                <span class="code-keyword">@GetMapping</span>(<span class="code-string">"/profile"</span>)<br>
+                <span class="code-keyword">public</span> <span class="code-class">ProfileResponse</span> <span class="code-fn">getProfile</span>() {<br>
+                &nbsp;&nbsp;<span class="code-keyword">return new</span> <span class="code-class">ProfileResponse</span>(<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Siva Prasanna"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Java Full Stack Developer"</span>,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;List.of(<span class="code-string">"Spring Boot"</span>, <span class="code-string">"REST"</span>, <span class="code-string">"MySQL"</span>, <span class="code-string">"JS"</span>),<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">true</span> <span class="code-comment">// readyToCollaborate</span><br>
+                &nbsp;&nbsp;);<br>
+                }
+              </p>
+              <p>}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT ME SECTION
+       ======================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Bridging Backend Strength with Frontend Simplicity</h2>
+        <p class="section-subtitle">
+          A dedicated Java Full Stack Developer trained in building production-ready web architectures from database to browser.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-card">
+          <p class="about-paragraph">
+            Hello! I'm <strong>Siva Prasanna</strong>, a software engineer specialized in <strong>Java Full Stack Development</strong>.
+            I possess strong hands-on experience designing end-to-end applications: engineering robust RESTful APIs with 
+            <strong>Spring Boot</strong> and <strong>Spring Data JPA</strong>, modeling relational databases with <strong>MySQL</strong>, and creating responsive, accessible user interfaces using <strong>HTML5, CSS3, and JavaScript</strong>.
+          </p>
+          <p class="about-paragraph">
+            Having completed intensive hands-on training through the <strong>GUVI Java Full Stack Development Program</strong>, I build applications following clean code principles, MVC separation of concerns, and rigorous validation.
+          </p>
+          <p class="about-paragraph">
+            Whether it's implementing transactional fund transfers, writing optimized JPA repository queries, or connecting dynamic DOM frontends with asynchronous Fetch API calls, I focus on engineering reliable, maintainable software.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+            <span class="skill-tag">📍 India</span>
+            <span class="skill-tag">💼 Open to Remote & Onsite</span>
+            <span class="skill-tag">🎓 GUVI Java FSD Certified</span>
+            <span class="skill-tag">⚡ Immediate Joiner</span>
+          </div>
+        </div>
+
+        <div class="about-stats-grid">
+          <div class="stat-card">
+            <span class="stat-icon">💻</span>
+            <span class="stat-value">4+</span>
+            <span class="stat-label">Full Stack & Backend Projects</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-icon">☕</span>
+            <span class="stat-value">Java 17+</span>
+            <span class="stat-label">Modern Spring Boot 3 Ecosystem</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-icon">📜</span>
+            <span class="stat-value">GUVI</span>
+            <span class="stat-label">Full Stack Certified Developer</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-icon">⚡</span>
+            <span class="stat-value">100%</span>
+            <span class="stat-label">RESTful Standards & Clean Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SKILLS SECTION
+       ======================================================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">My Tech Stack & Toolkit</h2>
+        <p class="section-subtitle">
+          Core technologies, libraries, and tools I utilize across the entire full-stack lifecycle.
+        </p>
+      </div>
+
+      <div class="skills-grid" id="skills-container">
+        <!-- Rendered dynamically by app.js from skillsData -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SYSTEM ARCHITECTURE SECTION
+       ======================================================================== -->
+  <section class="arch-section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">System Design</span>
+        <h2 class="section-title">Full Stack Enterprise Architecture</h2>
+        <p class="section-subtitle">
+          How I architect end-to-end full-stack applications with clear layer separation, validation, and transactional integrity.
+        </p>
+      </div>
+
+      <div class="arch-container">
+        <div style="text-align: center; max-width: 750px; margin: 0 auto;">
+          <p style="font-size: 0.98rem; color: var(--text-secondary);">
+            Every application is structured with decoupled tiers: a lightweight, responsive client communicating via standard HTTP/JSON REST APIs to a Spring Boot service layer, persisted securely into a relational database.
+          </p>
+        </div>
+
+        <div class="arch-flow">
+          <div class="arch-node">
+            <div class="arch-layer-number">LAYER 01</div>
+            <h4 class="arch-node-title">Client Presentation</h4>
+            <p class="arch-node-desc">HTML5 Semantic UI, CSS3 responsive grid, Vanilla JavaScript DOM rendering & async Fetch API.</p>
+            <span class="arch-tech-badge">HTML / CSS / JS</span>
+          </div>
+
+          <div class="arch-node">
+            <div class="arch-layer-number">LAYER 02</div>
+            <h4 class="arch-node-title">REST Controller</h4>
+            <p class="arch-node-desc">Spring Boot @RestController, DTO mapping, @Valid Jakarta constraints, and @CrossOrigin policies.</p>
+            <span class="arch-tech-badge">Spring Web / REST</span>
+          </div>
+
+          <div class="arch-node">
+            <div class="arch-layer-number">LAYER 03</div>
+            <h4 class="arch-node-title">Service & Logic</h4>
+            <p class="arch-node-desc">Core business rules, exception handling via @ControllerAdvice, and @Transactional guarantees.</p>
+            <span class="arch-tech-badge">@Service Layer</span>
+          </div>
+
+          <div class="arch-node">
+            <div class="arch-layer-number">LAYER 04</div>
+            <h4 class="arch-node-title">Data Access (ORM)</h4>
+            <p class="arch-node-desc">Spring Data JPA repositories, Hibernate ORM entity relationships (@OneToMany, @ManyToOne).</p>
+            <span class="arch-tech-badge">Spring Data JPA</span>
+          </div>
+
+          <div class="arch-node">
+            <div class="arch-layer-number">LAYER 05</div>
+            <h4 class="arch-node-title">Database Storage</h4>
+            <p class="arch-node-desc">MySQL / PostgreSQL relational database, normalized tables, foreign keys, and ACID compliance.</p>
+            <span class="arch-tech-badge">MySQL / PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SECTION
+       ======================================================================== -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio Showcase</span>
+        <h2 class="section-title">Featured Java FSD Projects</h2>
+        <p class="section-subtitle">
+          Real-world applications showcasing full stack development, REST API engineering, and relational database management.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack (HTML/CSS/JS + Spring Boot)</button>
+        <button class="filter-btn" data-filter="backend">Backend & REST APIs</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered dynamically by app.js from projectsData / API -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EDUCATION & CERTIFICATIONS SECTION
+       ======================================================================== -->
+  <section class="edu-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Learning & Credentials</span>
+        <h2 class="section-title">Education & Certifications</h2>
+        <p class="section-subtitle">
+          Academic foundation and specialized full-stack engineering qualifications.
+        </p>
+      </div>
+
+      <div class="edu-timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-badge">Professional Certification</span>
+            <span class="timeline-period">Comprehensive Program</span>
+          </div>
+          <h3 class="timeline-title">Java Full Stack Development Program</h3>
+          <div class="timeline-institution">GUVI Geek Networks (IIT Madras Research Park incubatee)</div>
+          <p class="timeline-desc">
+            Rigorous hands-on curriculum covering Core Java, Object-Oriented Programming, Data Structures & Algorithms, 
+            Spring Boot, Spring Data JPA, Hibernate, MySQL database management, RESTful microservices, and modern frontend 
+            technologies (HTML5, CSS3, JavaScript ES6+). Built multiple capstone full-stack applications.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-badge">Academic Degree</span>
+            <span class="timeline-period">Graduate</span>
+          </div>
+          <h3 class="timeline-title">Bachelor's Degree</h3>
+          <div class="timeline-institution">Engineering / Computer Science</div>
+          <p class="timeline-desc">
+            Developed deep foundation in Software Engineering fundamentals, Database Management Systems (DBMS), 
+            Computer Networks, Operating Systems, and Object-Oriented Analysis & Design.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DEVELOPER PROFILES & GITHUB STATS
+       ======================================================================== -->
+  <section class="skills-section" style="padding: 70px 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Developer Footprint</span>
+        <h2 class="section-title">Open Source & Problem Solving</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+        <!-- GitHub Profile Card -->
+        <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="contact-card" style="text-decoration: none;">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </div>
+          <div class="contact-card-content">
+            <span class="contact-card-label">GitHub Profile</span>
+            <span class="contact-card-value">github.com/SIVAPRASANNA2812</span>
+            <span style="font-size: 0.8rem; color: var(--accent-cyan); margin-top: 0.25rem;">View Repositories & Code →</span>
+          </div>
+        </a>
+
+        <!-- LinkedIn Profile Card -->
+        <a href="https://www.linkedin.com/in/sivaprasanna2812" target="_blank" rel="noopener noreferrer" class="contact-card" style="text-decoration: none;">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+          <div class="contact-card-content">
+            <span class="contact-card-label">LinkedIn Connection</span>
+            <span class="contact-card-value">linkedin.com/in/sivaprasanna2812</span>
+            <span style="font-size: 0.8rem; color: var(--accent-indigo); margin-top: 0.25rem;">Connect Professionally →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT SECTION
+       ======================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Build Something Great</h2>
+        <p class="section-subtitle">
+          Have an opportunity, a project to collaborate on, or want to discuss full-stack engineering? Feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Details -->
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">✉️</div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">Direct Email</span>
+              <a href="mailto:sivaprasanna28@gmail.com" class="contact-card-value">sivaprasanna28@gmail.com</a>
+              <button onclick="copyEmail()" style="background: none; border: none; color: var(--accent-cyan); font-size: 0.8rem; text-align: left; cursor: pointer; margin-top: 0.2rem;">
+                📋 Click to copy email
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">💼</div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/sivaprasanna2812" target="_blank" rel="noopener noreferrer" class="contact-card-value">
+                linkedin.com/in/sivaprasanna2812
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">🐙</div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">GitHub</span>
+              <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="contact-card-value">
+                github.com/SIVAPRASANNA2812
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-content">
+              <span class="contact-card-label">Location & Availability</span>
+              <span class="contact-card-value">India (Open to Relocation & Remote)</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 0.5rem;" id="backend-status-pill" class="status-pill">
+            <span class="pulse-dot"></span> Checking backend status...
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-feedback" id="form-feedback"></div>
+
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="Job Opportunity / Project Collaboration" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Hello Siva, I came across your Java Full Stack profile..." required></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECT DETAILS & ARCHITECTURE MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span id="modal-category" class="project-category-badge">CATEGORY</span>
+          <h3 id="modal-title" style="font-size: 1.35rem; margin-top: 0.25rem;">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Rendered by openProjectModal() in app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand-logo">
+        <span class="logo-badge">SP</span>
+        <span>Siva Prasanna</span>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="footer-credit">
+        © 2026 <strong>Siva Prasanna</strong>. Built with semantic HTML5, CSS3, modern JavaScript, and Spring Boot REST backend.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" title="Back to Top" aria-label="Back to Top">
+    ↑
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
