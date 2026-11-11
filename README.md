@@ -1,158 +1,127 @@
-# 🚀 Siva Prasanna - Java Full Stack Developer Portfolio
+# 🚀 Siva Prasanna — Java Full Stack & Oracle PL/SQL Developer Portfolio
 
-A modern, high-performance portfolio application designed specifically for **Java Full Stack Developers**. Built with **HTML5, CSS3, and JavaScript** on the frontend, powered by a **Java & Spring Boot** REST API backend.
+A modern, fast, zero-build developer portfolio showcasing **6+ years of enterprise database experience at Tata Consultancy Services (TCS)** combined with modern **Java Full Stack Development** mastered through the **Executive Program at HCL / GUVI Zen Class (IIT Madras Research Park)**.
 
-![Portfolio Preview Banner](https://img.shields.io/badge/Stack-Java%20%7C%20Spring%20Boot%20%7C%20MySQL%20%7C%20HTML%20%7C%20CSS%20%7C%20JS-38bdf8?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-10b981?style=for-the-badge)
-
----
-
-## 👨‍💻 Developer Profile
-
-- **Developer:** Siva Prasanna
-- **Title:** Java Full Stack Developer
-- **GitHub:** [github.com/SIVAPRASANNA2812](https://github.com/SIVAPRASANNA2812)
-- **LinkedIn:** [linkedin.com/in/sivaprasanna2812](https://www.linkedin.com/in/sivaprasanna2812)
-- **Email:** [sivaprasanna28@gmail.com](mailto:sivaprasanna28@gmail.com)
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit_Website-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sivaprasanna2812.github.io/Portfolio_JavaFullStack/)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-SIVAPRASANNA2812-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SIVAPRASANNA2812)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Siva_Prasanna-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sivaprasanna2812)
+[![Email](https://img.shields.io/badge/Email-sivaprasanna28@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sivaprasanna28@gmail.com)
 
 ---
 
-## 🌟 Key Features
+## 👨‍💻 Professional Summary
 
-1. **Enterprise 5-Layer System Architecture Section**:
-   - Visual breakdown illustrating: `Client UI (HTML/CSS/JS)` $\rightarrow$ `REST Controller (@RestController)` $\rightarrow$ `Service Layer (@Service)` $\rightarrow$ `ORM (@Repository/JPA)` $\rightarrow$ `Database (MySQL)`.
-2. **Featured Projects Showcase with Architecture Modals**:
-   - Detailed project case studies for:
-     - **E-Commerce Full Stack Web Application** (Spring Boot, MySQL, REST, Vanilla JS)
-     - **Employee Management System (EMS)** (Spring Boot, Hibernate, MySQL, Bootstrap)
-     - **Secure Banking & Fund Transfer REST API** (Spring Boot, JWT Security, ACID transactions)
-     - **Developer Portfolio & Inquiry System** (HTML5, CSS3, JS, Spring Boot REST API)
-   - Interactive modal popup with **system architecture flow diagrams** and **sample REST endpoints**.
-3. **Dynamic Filtering**:
-   - Filter projects instantly by category: `All`, `Full Stack`, or `Backend & REST APIs`.
-4. **Theme Switcher**:
-   - Smooth Dark Mode & Light Mode toggle with persistence via `localStorage`.
-5. **Interactive Contact System**:
-   - Connects directly to the Spring Boot REST backend (`POST /api/contact`) with Jakarta Bean Validation.
-   - Intelligent fallback: If running statically without the backend running, automatically provides an instant direct email compose option.
-6. **Mobile First & Fully Responsive**:
-   - Optimized for desktop, tablets, and smartphones with mobile navigation drawer.
+Senior Systems Engineer with **6+ years of mission-critical enterprise experience at Tata Consultancy Services (TCS)**, specialized in architecting high-throughput **Oracle 19c PL/SQL batch systems**, complex database procedures, and legacy mainframe modernization for tier-1 European clients. Recognized as **Best Performer of the Year** at TCS for engineering excellence and zero-downtime production cutovers.
+
+Strategically expanded into **Full-Stack Distributed Systems** via the **Executive Program at HCL / GUVI Zen Class (IIT Madras Research Park)**. Combines deep database internals (`BULK COLLECT`, `FORALL`, analytical functions, and ACID transaction boundaries) with modern **Java 21, Spring Boot 3, Spring Security 6 (JJWT Token Rotation), MongoDB Atlas, and Docker containerization**.
+
+---
+
+## 🌟 Featured Projects
+
+### 1. [CareerNest — Enterprise Full-Stack Job Portal Platform](projects.html)
+* **Category:** HCL / GUVI Full Stack Capstone • Java 21
+* **Tech Stack:** `Java 21`, `Spring Boot`, `MongoDB Atlas`, `Spring Security 6`, `JWT (Token Rotation)`, `Twilio Cloud SMS`, `HTML5/CSS3/Vanilla JS`, `Docker`, `Nginx Alpine`, `Render`
+* **Highlights:**
+  * Real-time job discovery with keyword/location filtering, 1-click modal applications, and live status tracker (`APPLIED`, `UNDER_REVIEW`, `ACCEPTED`, `REJECTED`).
+  * Stateless security via Spring Security 6 & JJWT featuring 15-minute access tokens and single-use 7-day refresh tokens with automated revocation in MongoDB Atlas.
+  * Asynchronous dual-mode Twilio Cloud SMS engine broadcasting real-time review alerts directly to candidates' mobile phones.
+  * Multi-stage Docker builds (Temurin JDK 21 backend + Nginx Alpine frontend) deployed to Render Cloud with OpenAPI 3 / Swagger documentation.
+
+### 2. [E-Commerce Backend System REST API](projects.html)
+* **Category:** HCL / GUVI Full Stack Capstone • Backend & Cloud API
+* **Tech Stack:** `Java 21`, `Spring Boot`, `MongoDB`, `Spring Security`, `JWT / RBAC`, `AWS EC2`, `Render`, `Docker`
+* **Highlights:**
+  * Role-Based Access Control (RBAC) across `USER`, `ADMIN`, and `MANAGER` roles with BCrypt password hashing.
+  * Zero-lock concurrency control using MongoDB conditional atomic updates (`findAndModify`) preventing race conditions and inventory overselling during peak checkouts.
+  * 4-step transactional workflow (`stock validation` &rarr; `atomic deduction` &rarr; `order creation` &rarr; `cart clearing`) with price locking (`priceAtPurchase`) and auto-replenishment on cancellation.
+  * Idempotent payment simulation service with safe retry policies, hosted on AWS EC2 & Render with RFC-compliant global exception handling.
+
+### 3. [PRR Time & Attendance Migration System](projects.html)
+* **Category:** Enterprise Oracle PL/SQL • TCS Production System
+* **Tech Stack:** `Oracle 19c`, `PL/SQL`, `Bulk Collect & FORALL`, `Performance Tuning`, `TCS Enterprise`
+* **Highlights:**
+  * Migrated legacy mainframe time-and-attendance calculation logic into optimized Oracle 19c PL/SQL packages, stored procedures, and triggers for Colruyt Group.
+  * Engineered automated auditing queries used by third-party regulatory agencies to validate employee absence and working hours.
+  * Leveraged high-speed batch execution using `BULK COLLECT` and `FORALL` constructs for large-scale enterprise data processing.
+
+### 4. [Logistics Workers Tax Reduction & Compliance Engine](projects.html)
+* **Category:** Enterprise Oracle PL/SQL • Project Lead (TCS)
+* **Tech Stack:** `Oracle PL/SQL`, `PeopleTools`, `Control-M`, `Large Datasets`, `TCS Best Performer Award`
+* **Highlights:**
+  * Served as Project Lead defining business rules and engineering PL/SQL procedures to extract, filter, and process massive datasets against statutory tax reduction criteria.
+  * Awarded **Best Performer of the Year** at TCS for converting legacy SQR cycles to modern, high-throughput PL/SQL.
+
+---
+
+## 🛠️ Technical Competencies
+
+| Domain | Technologies & Methodologies |
+| :--- | :--- |
+| **Languages** | Java 21, Oracle SQL, PL/SQL, JavaScript (ES6+), HTML5, CSS3 |
+| **Frameworks & Backend** | Spring Boot 3, Spring Data JPA, Spring Security 6, Hibernate ORM, RESTful Web Services |
+| **Databases & Cloud** | Oracle Database 19c, MongoDB Atlas, Snowflake, MySQL |
+| **Database Engineering** | Stored Procedures, Packages, Functions, Triggers, Views, Cursors, Bulk Collect & FORALL, Query Optimization |
+| **Security & Architecture** | JJWT Token Rotation & Revocation, RBAC, Microservices, MVC Architecture, Clean Architecture |
+| **DevOps & Tools** | Docker, Docker Compose, Nginx, Git, GitHub, Jenkins (CI/CD), Maven, Postman, Swagger / OpenAPI 3, AWS EC2, Render |
+| **Testing & Quality** | JUnit 5, Mockito, MockMvc, Automated Unit & Integration Testing, Agile/Scrum, SDLC |
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
-PortFolio_FSD/
+Portfolio_JavaFullStack/
 │
-├── frontend/                                # Frontend Single-Page Application
-│   ├── index.html                           # Main semantic HTML5 document
-│   ├── css/
-│   │   ├── themes.css                       # Dark & Light mode theme variables
-│   │   └── style.css                        # Responsive styles, glassmorphism, animations
-│   ├── js/
-│   │   ├── app.js                           # UI interactions, modals, filtering, theme toggle
-│   │   ├── projects-data.js                 # Central project and skill definitions (easy to customize)
-│   │   └── api.js                           # REST API client connecting to Spring Boot
-│   └── assets/
-│       ├── icons/                           # Tech icons
-│       └── resume/
-│           ├── README.txt
-│           └── Siva_Prasanna_Resume.pdf     # Place your PDF resume here
+├── index.html                   # Home Page: Crisp executive pitch, tech badges, photo blob, resume CTA
+├── about.html                   # About Page: 6+ yrs TCS experience, HCL/GUVI transition, bento grid, timeline
+├── projects.html                # Projects Page: Live category filtering (HCL/GUVI Capstones vs. TCS Enterprise)
+├── resume.html                  # Resume Page: Interactive embedded PDF viewer, summary cards, direct download
+├── contact.html                 # Contact Page: Direct details (email, phone, LinkedIn, GitHub) & message form
 │
-├── backend/                                 # Spring Boot REST API Application
-│   ├── pom.xml                              # Maven build file with Spring Boot 3 & Java 17+
-│   └── src/main/
-│       ├── java/com/portfolio/
-│       │   ├── PortfolioApplication.java    # Spring Boot Main Entry Point
-│       │   ├── config/WebConfig.java        # CORS configuration for cross-origin access
-│       │   ├── controller/
-│       │   │   ├── ContactController.java   # POST & GET /api/contact endpoints
-│       │   │   ├── HealthController.java    # GET /api/health check endpoint
-│       │   │   └── ProjectController.java   # GET /api/projects REST endpoint
-│       │   ├── model/
-│       │   │   ├── ContactMessage.java      # JPA Entity for contact inquiries
-│       │   │   └── Project.java             # Project POJO model
-│       │   ├── repository/
-│       │   │   └── ContactMessageRepository.java # Spring Data JPA repository
-│       │   └── service/
-│       │       └── ContactService.java      # Transactional business logic
-│       └── resources/
-│           └── application.properties       # H2 (in-memory) & MySQL configurations
+├── style.css                    # Master Stylesheet: Unified Dark/Light theme, blob animation, mobile-first
+├── script.js                    # Master JavaScript: Theme toggle, mobile drawer, project filtering, contact form
 │
-└── README.md
+├── profile.jpg                  # Profile Picture
+├── SivaPrasanna_Resume.pdf      # PDF Resume Document
+├── .gitignore                   # Git Ignore Configuration
+└── README.md                    # Project Documentation & Architecture Overview
 ```
 
 ---
 
-## 🚀 Quick Start Guide
+## ⚡ Key Highlights of This Portfolio Website
 
-### 1. Running the Frontend (Static / Local)
-
-You can launch the frontend immediately with no build steps required:
-
-- **Option A (VS Code Live Server)**:
-  Right-click `frontend/index.html` $\rightarrow$ Select **"Open with Live Server"**.
-- **Option B (Direct Browser)**:
-  Double-click `frontend/index.html` to open it in Chrome, Edge, or Firefox.
-- **Option C (Node.js)**:
-  ```bash
-  npx serve frontend
-  ```
+1. **Zero-Build & Ultra-Fast:** Built using semantic HTML5, clean CSS3, and modular Vanilla JavaScript—delivering sub-second load times without heavy bundler overhead.
+2. **Native Dark / Light Mode:** Instant theme switcher with `localStorage` memory and system preference detection.
+3. **Live Projects Filtering:** Client-side JavaScript filtering by category (*All Projects, HCL / GUVI Full Stack Capstones, TCS Enterprise Systems*).
+4. **Interactive Embedded Resume:** View [`SivaPrasanna_Resume.pdf`](SivaPrasanna_Resume.pdf) directly in the browser or download it with one click.
+5. **Mobile-First Responsive Design:** Optimized for desktops, tablets, and smartphones with an animated slide-over mobile drawer.
 
 ---
 
-### 2. Running the Spring Boot Backend
+## 🚀 How to Run Locally
 
-The backend is configured with an in-memory **H2 Database** by default, meaning it runs instantly without requiring a local database server installation.
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-Once running:
-- **API Base URL:** `http://localhost:8080/api`
-- **Health Check:** `http://localhost:8080/api/health`
-- **Inquiries API:** `http://localhost:8080/api/contact`
-- **H2 Database Console:** `http://localhost:8080/h2-console`
-  - JDBC URL: `jdbc:h2:mem:portfoliodb`
-  - Username: `sa`
-  - Password: *(blank)*
-
-*(Optional: To use a MySQL database, open `backend/src/main/resources/application.properties` and uncomment the MySQL block with your credentials).*
-
----
-
-### 3. How to Customize Your Projects
-
-All projects and skill tags are stored in [`frontend/js/projects-data.js`](frontend/js/projects-data.js).
-
-To add a new project or change a GitHub link:
-1. Open `frontend/js/projects-data.js`.
-2. Update the project title, description, or `githubUrl`:
-   ```javascript
-   {
-     id: "my-custom-project",
-     title: "My Super Project",
-     category: "fullstack",
-     githubUrl: "https://github.com/SIVAPRASANNA2812/my-custom-project",
-     ...
-   }
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SIVAPRASANNA2812/Portfolio_JavaFullStack.git
+   cd Portfolio_JavaFullStack
    ```
-3. Refresh `index.html` in your browser. The changes will update immediately!
+2. **Open in browser:**
+   - Double-click `index.html`, OR
+   - In VS Code, right-click `index.html` $\rightarrow$ **Open with Live Server**.
 
 ---
 
-### 4. Deploying to the Web (Free)
+## 📬 Contact & Connect
 
-#### Frontend:
-- **GitHub Pages:**
-  1. Push this repository to `https://github.com/SIVAPRASANNA2812/portfolio`.
-  2. Go to **Settings $\rightarrow$ Pages**.
-  3. Under **Branch**, select `main` and folder `/frontend` (or move files to root).
-  4. Your portfolio will be live at `https://sivaprasanna2812.github.io/portfolio/`!
+* **Developer:** Siva Prasanna
+* **Role:** Senior Systems Engineer | Java Full Stack & Oracle PL/SQL
+* **Email:** [sivaprasanna28@gmail.com](mailto:sivaprasanna28@gmail.com)
+* **Phone:** +91-8754198575
+* **LinkedIn:** [linkedin.com/in/sivaprasanna2812](https://www.linkedin.com/in/sivaprasanna2812)
+* **GitHub:** [github.com/SIVAPRASANNA2812](https://github.com/SIVAPRASANNA2812)
+* **Live Site:** [https://sivaprasanna2812.github.io/Portfolio_JavaFullStack/](https://sivaprasanna2812.github.io/Portfolio_JavaFullStack/)
 
-#### Backend:
-- Deploy the `backend/` folder to free cloud platforms like **Render**, **Railway**, or **Fly.io**.
-- Update `API_CONFIG.baseUrl` in [`frontend/js/api.js`](frontend/js/api.js) to your deployed backend URL.
+---
+© 2026 **Siva Prasanna**. All rights reserved.
