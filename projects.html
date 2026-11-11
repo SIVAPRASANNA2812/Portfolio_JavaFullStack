@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Siva Prasanna - Java Full Stack & Oracle PL/SQL</title>
+
+    <!-- SEO & Social Meta -->
+    <meta name="description" content="Explore CareerNest, E-Commerce REST API, and enterprise Oracle PL/SQL solutions developed by Siva Prasanna.">
+    <meta name="author" content="Siva Prasanna">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">SP<span class="accent">.</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-main">
+        <div class="page-container">
+            <!-- Header -->
+            <div class="page-header">
+                <span class="hero-subtitle">Production &amp; Executive Portfolio</span>
+                <h1 class="page-title">Featured <span class="highlight">Projects</span>.</h1>
+                <p class="section-text" style="max-width: 780px; margin-top: 0.75rem;">
+                    Featuring production-grade capstone applications built during the <strong>HCL / GUVI Executive Java Full Stack Program (IIT Madras)</strong> 
+                    alongside mission-critical enterprise systems delivered during my <strong>6+ years at Tata Consultancy Services (TCS)</strong>.
+                </p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="fullstack">HCL / GUVI Full Stack Capstones</button>
+                <button class="filter-btn" data-filter="enterprise">TCS Enterprise Systems (6+ Yrs)</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1: CareerNest -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-header-visual gradient-1">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <span class="project-category-pill">HCL / GUVI Capstone • Java 21</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h2 class="project-title">CareerNest — Enterprise Full-Stack Job Portal</h2>
+                        <p class="project-desc">
+                            Marquee full-stack capstone developed during the HCL / GUVI Executive Program. Connects employers 
+                            and job seekers with a decoupled Spring Boot REST API, Twilio SMS notifications, token rotation security, 
+                            and a responsive vanilla JS frontend deployed on Render Cloud.
+                        </p>
+
+                        <div class="project-highlights">
+                            <ul>
+                                <li><strong>Frontend Architecture:</strong> Dynamic job discovery with instant keyword/location filtering, 1-click modal applications, live status tracker (APPLIED, UNDER_REVIEW, ACCEPTED, REJECTED), and employer KPI review board.</li>
+                                <li><strong>Stateless Security:</strong> Spring Security 6 with JJWT token rotation (15-min access tokens, single-use 7-day refresh tokens with automated revocation in MongoDB Atlas).</li>
+                                <li><strong>Cloud Notifications:</strong> Asynchronous dual-mode Twilio Cloud SMS engine broadcasting real-time updates directly to candidate mobile devices.</li>
+                                <li><strong>Database Performance:</strong> MongoDB Atlas compound unique indexing (<code>jobId + seekerId</code>) guaranteeing application idempotency and preventing duplicate submissions.</li>
+                                <li><strong>DevOps &amp; Docker:</strong> Containerized multi-stage Docker builds (Temurin JDK 21 backend + Nginx Alpine frontend) with Docker Compose and Swagger/OpenAPI 3.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag"><i class="fa-brands fa-java"></i> Java 21</span>
+                            <span class="tag"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                            <span class="tag"><i class="fa-solid fa-shield-halved"></i> Spring Security 6</span>
+                            <span class="tag"><i class="fa-solid fa-leaf"></i> MongoDB Atlas</span>
+                            <span class="tag"><i class="fa-solid fa-comment-sms"></i> Twilio SMS</span>
+                            <span class="tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="tag"><i class="fa-solid fa-cloud"></i> Render</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+                                <i class="fa-brands fa-github"></i>
+                                View on GitHub
+                            </a>
+                            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-sm">
+                                <i class="fa-solid fa-book-open"></i>
+                                Swagger Docs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-Commerce Backend System API -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-header-visual gradient-3">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="project-category-pill">HCL / GUVI Capstone • Backend</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h2 class="project-title">E-Commerce Backend System REST API</h2>
+                        <p class="project-desc">
+                            Production-grade E-Commerce backend service engineered during the HCL / GUVI Executive Program with Spring Boot and MongoDB, 
+                            featuring Role-Based Access Control, zero-lock concurrency control, and transactional cart-to-order processing.
+                        </p>
+
+                        <div class="project-highlights">
+                            <ul>
+                                <li><strong>RBAC &amp; Auth:</strong> Stateless JJWT authentication with BCrypt hashing across <code>USER</code>, <code>ADMIN</code>, and <code>MANAGER</code> roles.</li>
+                                <li><strong>Zero-Lock Concurrency:</strong> Leveraged MongoDB atomic conditional updates (<code>findAndModify</code>) preventing race conditions, inventory overselling, and inconsistencies during peak checkouts.</li>
+                                <li><strong>Transactional Workflow:</strong> 4-step order cycle (stock check &rarr; atomic deduction &rarr; order generation &rarr; cart wipe) with price locking (<code>priceAtPurchase</code>) and auto-restock on cancellation.</li>
+                                <li><strong>Idempotent Payments:</strong> Payment simulation engine with safe retry policies guaranteeing duplicate client requests never double-charge or corrupt state.</li>
+                                <li><strong>Cloud Deployment:</strong> Hosted on AWS EC2 and Render with SpringDoc OpenAPI 3 UI and RFC-compliant global error handling via <code>@RestControllerAdvice</code>.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag"><i class="fa-brands fa-java"></i> Java 21</span>
+                            <span class="tag"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                            <span class="tag"><i class="fa-solid fa-database"></i> MongoDB</span>
+                            <span class="tag"><i class="fa-solid fa-key"></i> JWT / RBAC</span>
+                            <span class="tag"><i class="fa-brands fa-aws"></i> AWS EC2</span>
+                            <span class="tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span class="tag"><i class="fa-solid fa-network-wired"></i> Swagger UI</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+                                <i class="fa-brands fa-github"></i>
+                                View on GitHub
+                            </a>
+                            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-sm">
+                                <i class="fa-solid fa-code"></i>
+                                API Contracts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: TCS Enterprise Time & Attendance Migration -->
+                <div class="project-card" data-category="enterprise">
+                    <div class="project-header-visual gradient-2">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <span class="project-category-pill">Enterprise • TCS</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h2 class="project-title">PRR Time &amp; Attendance Migration System</h2>
+                        <p class="project-desc">
+                            Enterprise migration at Tata Consultancy Services (TCS) converting legacy mainframe employee 
+                            attendance workflows into high-throughput Oracle PL/SQL batch architectures for Colruyt Group.
+                        </p>
+
+                        <div class="project-highlights">
+                            <ul>
+                                <li>Migrated legacy time-and-attendance calculation logic into optimized Oracle 19c PL/SQL packages, stored procedures, and triggers.</li>
+                                <li>Engineered automated queries used by external auditing agencies to validate employee absence and working hour compliance.</li>
+                                <li>Implemented high-speed batch execution using <code>BULK COLLECT</code> and <code>FORALL</code> for mass data transformations.</li>
+                                <li>Delivered end-to-end production support, performance query tuning, and zero-downtime cutover.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag"><i class="fa-solid fa-database"></i> Oracle 19c</span>
+                            <span class="tag"><i class="fa-solid fa-code"></i> PL/SQL</span>
+                            <span class="tag"><i class="fa-solid fa-bolt"></i> Bulk Collect</span>
+                            <span class="tag"><i class="fa-solid fa-gear"></i> Performance Tuning</span>
+                            <span class="tag"><i class="fa-solid fa-building"></i> TCS Enterprise</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="about.html" class="btn-primary btn-sm">
+                                <i class="fa-solid fa-user-tie"></i>
+                                View Experience
+                            </a>
+                            <a href="SivaPrasanna_Resume.pdf" target="_blank" class="btn-secondary btn-sm">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Resume Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: TCS Logistics Tax Reduction Engine -->
+                <div class="project-card" data-category="enterprise">
+                    <div class="project-header-visual gradient-4">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <span class="project-category-pill">Enterprise • Project Lead</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h2 class="project-title">Logistics Workers Tax Reduction &amp; Compliance Engine</h2>
+                        <p class="project-desc">
+                            Automated government tax reduction qualification engine developed at TCS. Processed enterprise-scale 
+                            logistics datasets against strict statutory eligibility rules with Oracle PL/SQL.
+                        </p>
+
+                        <div class="project-highlights">
+                            <ul>
+                                <li>Served as Project Lead analyzing complex statutory criteria and translating client business rules into high-performance PL/SQL procedures.</li>
+                                <li>Processed massive datasets to filter, compute, and report eligible employee tax deductions without data latency.</li>
+                                <li>Built integrated Oracle HCM components displaying worker tax metrics with robust unit testing.</li>
+                                <li>Awarded <strong>Best Performer of the Year</strong> for converting legacy SQR cycles to modern PL/SQL.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag"><i class="fa-solid fa-database"></i> Oracle PL/SQL</span>
+                            <span class="tag"><i class="fa-solid fa-award"></i> Best Performer Award</span>
+                            <span class="tag"><i class="fa-solid fa-calendar-check"></i> Control-M</span>
+                            <span class="tag"><i class="fa-solid fa-chart-pie"></i> Large Datasets</span>
+                            <span class="tag"><i class="fa-solid fa-shield-check"></i> Compliance</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="about.html" class="btn-primary btn-sm">
+                                <i class="fa-solid fa-user-tie"></i>
+                                View Experience
+                            </a>
+                            <a href="SivaPrasanna_Resume.pdf" target="_blank" class="btn-secondary btn-sm">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Resume Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">&copy; <span id="year">2026</span> Siva Prasanna. All rights reserved.</div>
+        <div class="socials">
+            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sivaprasanna2812" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:sivaprasanna28@gmail.com" aria-label="Email Me">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

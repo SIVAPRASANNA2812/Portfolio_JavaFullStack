@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Siva Prasanna - Software Engineer</title>
+
+    <!-- SEO & Social Meta -->
+    <meta name="description" content="Get in touch with Siva Prasanna — Software Engineer & Java Full Stack Developer with 6+ years at TCS.">
+    <meta name="author" content="Siva Prasanna">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">SP<span class="accent">.</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-main">
+        <div class="page-container">
+            <!-- Header -->
+            <div class="page-header">
+                <span class="hero-subtitle">Get In Touch</span>
+                <h1 class="page-title">Let's <span class="highlight">Connect</span>.</h1>
+                <p class="section-text" style="max-width: 650px; margin-top: 0.75rem;">
+                    I am actively open to discussions regarding Full Stack Software Engineering roles, 
+                    enterprise backend architecture, or collaborative technical opportunities.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Contact Details Cards -->
+                <div class="contact-info-col">
+                    <!-- Email Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:sivaprasanna28@gmail.com" class="contact-value">sivaprasanna28@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+918754198575" class="contact-value">+91-8754198575</a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/sivaprasanna2812" target="_blank" rel="noopener noreferrer" class="contact-value">
+                                in/sivaprasanna2812
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" class="contact-value">
+                                github.com/SIVAPRASANNA2812
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">India (Open to Relocation &amp; Remote)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Message Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div id="form-alert" class="form-alert" style="display: none;"></div>
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="e.g. Hiring Manager / Recruiter" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="e.g. recruiter@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Job Opportunity / Engineering Collaboration" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-textarea" rows="5" placeholder="Hello Siva, we reviewed your Java Full Stack & Oracle PL/SQL profile..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%;">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">&copy; <span id="year">2026</span> Siva Prasanna. All rights reserved.</div>
+        <div class="socials">
+            <a href="https://github.com/SIVAPRASANNA2812" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sivaprasanna2812" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:sivaprasanna28@gmail.com" aria-label="Email Me">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Prepare mailto link
+            const mailtoUri = `mailto:sivaprasanna28@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Inquiry from ' + name)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+            
+            const alertBox = document.getElementById('form-alert');
+            alertBox.style.display = 'block';
+            alertBox.textContent = 'Launching your email client to send message...';
+            
+            setTimeout(() => {
+                window.location.href = mailtoUri;
+            }, 600);
+        }
+    </script>
+</body>
+
+</html>
